@@ -1,10 +1,9 @@
 # TR-MQLR: Transfer-Regularized Probabilistic Supply Chain Demand Forecasting Model Framework for Launch-Phase Retail under Data Scarcity
 
-
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-Companion repository for the **rpaper presented at the I2M4RI 2026 paper "*TrR-MQLR: Transfer-Regularized Probabilistic Supply Chain Demand Forecasting Model Frameworkfor Launch-Phase Retail under Data Scarcity"*.
+Companion repository for the paper  "*TR-MQLR: Transfer-Regularized Probabilistic Supply Chain Demand Forecasting Model Frameworkfor Launch-Phase Retail under Data Scarcity"* presented at the **I2M4RI 2026 paper**.
 
 > **What's new in v0.2.0 (response-to-reviewers release)**
 >
@@ -24,7 +23,7 @@ Companion repository for the **rpaper presented at the I2M4RI 2026 paper "*TrR-M
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                         Revised Data-Scarcity Pipeline                       │
+│                         Data-Scarcity Pipeline                       │
 │                                                                              │
 │ raw M5 CSV ──► data_scarcity.dataset ──► source.csv  + target.csv (truncated)│
 │                                                                              │
@@ -49,7 +48,7 @@ Companion repository for the **rpaper presented at the I2M4RI 2026 paper "*TrR-M
 ### Option A — local Python (≥ 3.11)
 
 ```bash
-git clone https://github.com/Juan-Lucas/data-scarcity.git
+git clone https://github.com/mlecjm/data-scarcity.git
 cd data-scarcity
 pip install -r requirements.txt
 
@@ -77,16 +76,16 @@ Download `sales_train_validation.csv` from the [M5 Forecasting — Uncertainty](
 
 Every stage is a `typer` CLI that prints `--help`:
 
-| Module | Purpose |
-| --- | --- |
-| `data_scarcity.dataset` | source/target split with truncation + reproducibility metadata |
-| `data_scarcity.features` | lag + calendar + rolling-mean features (leakage-checked) |
-| `data_scarcity.modeling.train` | original point-only training (v0.1, kept for reproducibility) |
-| `data_scarcity.modeling.predict` | inference with v0.1 model |
-| `data_scarcity.modeling.compare_models` | **revised** harness: 10 models, full metric panel, CQR |
-| `data_scarcity.modeling.run_experiment` | (history × lambda) grid sweep |
-| `data_scarcity.modeling.multi_seed_runner` | N-seed aggregation with bootstrap CIs |
-| `data_scarcity.plots` / `data_scarcity.metrics_plots` | publication figures |
+| Module                                                    | Purpose                                                        |
+| --------------------------------------------------------- | -------------------------------------------------------------- |
+| `data_scarcity.dataset`                                 | source/target split with truncation + reproducibility metadata |
+| `data_scarcity.features`                                | lag + calendar + rolling-mean features (leakage-checked)       |
+| `data_scarcity.modeling.train`                          | original point-only training (v0.1, kept for reproducibility)  |
+| `data_scarcity.modeling.predict`                        | inference with v0.1 model                                      |
+| `data_scarcity.modeling.compare_models`                 | **revised** harness: 10 models, full metric panel, CQR   |
+| `data_scarcity.modeling.run_experiment`                 | (history × lambda) grid sweep                                 |
+| `data_scarcity.modeling.multi_seed_runner`              | N-seed aggregation with bootstrap CIs                          |
+| `data_scarcity.plots` / `data_scarcity.metrics_plots` | publication figures                                            |
 
 ## Project layout
 
@@ -116,25 +115,25 @@ tests/                              # 19 unit tests + 1 slow end-to-end
 
 ## Outputs
 
-| File | Content |
-| --- | --- |
-| `data/processed/source_dataset.csv` / `target_dataset.csv` | raw split |
-| `data/processed/source_features.csv` / `target_*_features.csv` | engineered features |
-| `data/processed/model_comparison_results.csv` | per-model metrics |
-| `data/processed/model_comparison_predictions.csv` | per-row predictions + intervals |
-| `data/processed/experiment_results_grid.csv` | (history × lambda) RMSE table |
-| `data/processed/multi_seed/aggregated_metrics.{csv,json}` | mean ± std + CIs |
-| `reports/figures/model_metrics_bars.png` | 4-panel metric comparison |
-| `reports/figures/transfer_gain_heatmap.png` | RMSE gain of ridge transfer |
-| `reports/figures/coverage_width_tradeoff.png` | uncertainty trade-off |
-| `reports/figures/test_series_confidence_band.png` | observed + predictive band (clipped at 0) |
+| File                                                               | Content                                   |
+| ------------------------------------------------------------------ | ----------------------------------------- |
+| `data/processed/source_dataset.csv` / `target_dataset.csv`     | raw split                                 |
+| `data/processed/source_features.csv` / `target_*_features.csv` | engineered features                       |
+| `data/processed/model_comparison_results.csv`                    | per-model metrics                         |
+| `data/processed/model_comparison_predictions.csv`                | per-row predictions + intervals           |
+| `data/processed/experiment_results_grid.csv`                     | (history × lambda) RMSE table            |
+| `data/processed/multi_seed/aggregated_metrics.{csv,json}`        | mean ± std + CIs                         |
+| `reports/figures/model_metrics_bars.png`                         | 4-panel metric comparison                 |
+| `reports/figures/transfer_gain_heatmap.png`                      | RMSE gain of ridge transfer               |
+| `reports/figures/coverage_width_tradeoff.png`                    | uncertainty trade-off                     |
+| `reports/figures/test_series_confidence_band.png`                | observed + predictive band (clipped at 0) |
 
 ## Citing
 
 ```bibtex
 @inproceedings{datascarcity2026,
   title     = {Transfer-Regularised Probabilistic Demand Forecasting for Launch-Phase Retail under Data Scarcity},
-  author    = {Mupasa, Jean-Luc and Kalubi, Lucianne and Mwanza, Ulysse},
+  author    = {Merlec, M. M., Jean-Luc, M. K., Ulysse, M. K., Lucianne, K. K., and Patrick, K. T. },
   booktitle = {International Workshop on AI \& Mathematical Methods for Real-World Impact (AI2M4RI)},
   address   = {Athens, Greece},
   year      = {2026},
