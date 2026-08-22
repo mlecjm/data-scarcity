@@ -1,0 +1,201 @@
+{
+  "input_path": "data/raw/m5/sales_train_validation.csv",
+  "source_output_path": "/home/claude/work/data-scarcity-revised/data/processed/source_dataset.csv",
+  "target_output_path": "/home/claude/work/data-scarcity-revised/data/processed/target_dataset.csv",
+  "n_series_total": 250,
+  "n_series_source": 204,
+  "n_series_target": 46,
+  "n_rows_source": 74460,
+  "n_rows_target": 5014,
+  "target_ratio": 0.2,
+  "target_history_fraction": 0.3,
+  "max_series": 250,
+  "max_days": 365,
+  "seed": 42,
+  "truncation_per_target_series": {
+    "FOODS_0001_CA_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0007_WI_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0009_CA_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0012_TX_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0013_TX_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0019_CA_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0023_TX_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0026_WI_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0027_CA_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0041_TX_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0044_WI_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0046_CA_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0056_CA_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0058_TX_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0067_TX_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0088_WI_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0089_WI_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0090_CA_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0094_TX_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0100_CA_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0106_WI_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0113_TX_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0119_CA_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0124_WI_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0126_CA_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0131_TX_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0134_WI_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0136_CA_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0139_TX_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0154_CA_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0160_WI_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0165_TX_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0169_WI_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0175_TX_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0176_TX_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0183_TX_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0188_WI_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0197_WI_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0203_TX_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0207_CA_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0218_CA_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0224_WI_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0228_TX_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOUSEHOLD_0230_TX_3_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "HOBBIES_0231_WI_1_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    },
+    "FOODS_0235_CA_2_validation": {
+      "original_points": 365,
+      "kept_points": 109
+    }
+  }
+}

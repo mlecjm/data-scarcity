@@ -1,0 +1,15 @@
+{
+  "n_test": 1288,
+  "mae_baseline": 0.5760869565217391,
+  "rmse_baseline": 0.9914228435225735,
+  "mae_target_only": 0.5567857659297918,
+  "rmse_target_only": 0.7612702596605144,
+  "mae_transfer": 0.5562405283109514,
+  "rmse_transfer": 0.761233948823227,
+  "pinball_loss_transfer": 0.16856041263417262,
+  "interval_alpha": 0.1,
+  "interval_lower_quantile": 0.1,
+  "interval_upper_quantile": 0.9,
+  "interval_coverage": 0.7872670807453416,
+  "interval_avg_width": 1.4125449887170287
+}
