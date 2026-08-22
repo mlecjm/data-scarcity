@@ -23,7 +23,7 @@ Companion repository for the paper  "*TR-MQLR: Transfer-Regularized Probabilisti
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                         Data-Scarcity Pipeline                       │
+│                         Data-Scarcity Pipeline                               │
 │                                                                              │
 │ raw M5 CSV ──► data_scarcity.dataset ──► source.csv  + target.csv (truncated)│
 │                                                                              │
