@@ -1,0 +1,13 @@
+services:
+  reproduce:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: data-scarcity:latest
+    volumes:
+      - ../data:/workspace/data
+      - ../reports:/workspace/reports
+      - ../models:/workspace/models
+    environment:
+      DS_SEED: "42"
+    command: make reproduce
